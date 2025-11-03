@@ -1,0 +1,21 @@
+.transactions {
+  padding: 2rem;
+}
+.transactions table {
+  width: 100%;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px #b1c3de44;
+  margin: 0;
+}
+th, td {
+  padding: 1em;
+  text-align: left;
+}
+.flagged {
+  color: #e62429;
+  font-weight: bold;
+}
+.completed {
+  color: #2e7d32;
+}

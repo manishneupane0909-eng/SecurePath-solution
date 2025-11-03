@@ -1,0 +1,23 @@
+.dashboard {
+  padding: 2rem;
+}
+.summary {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card {
+  background: var(--card);
+  box-shadow: 0 6px 16px #b1c3de44;
+  border-radius: 10px;
+  padding: 1.2em 2em;
+  min-width: 180px;
+  text-align: center;
+}
+.charts {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0 6px 16px #b1c3de44;
+  margin-top: 2rem;
+}
