@@ -14,6 +14,7 @@ import RiskBreakdown from "./components/RiskBreakdown";
 import NewsFeed from "./components/NewsFeed";
 import RiskQuiz from "./components/RiskQuiz";
 import FaqPage from "./components/FaqPage";
+import CsvUploader from "./components/CsvUploader"; // <--- Add this
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -35,10 +36,11 @@ function App() {
         <Route path="/news" element={<NewsFeed />} />
         <Route path="/self-assessment" element={<RiskQuiz />} />
         <Route path="/faq" element={<FaqPage />} />
-        <Route path="/" element={loggedIn ? <Dashboard role={role}/> : <Navigate to="/login" />} />
-        <Route path="/transactions" element={loggedIn ? <Transactions role={role}/> : <Navigate to="/login" />} />
-        <Route path="/alerts" element={loggedIn ? <Alerts role={role}/> : <Navigate to="/login" />} />
-        <Route path="/profile" element={loggedIn ? <Profile role={role}/> : <Navigate to="/login" />} />
+        <Route path="/ml-uploader" element={loggedIn ? <CsvUploader /> : <Navigate to="/login" />} /> {/* ML upload route */}
+        <Route path="/" element={loggedIn ? <Dashboard role={role} /> : <Navigate to="/login" />} />
+        <Route path="/transactions" element={loggedIn ? <Transactions role={role} /> : <Navigate to="/login" />} />
+        <Route path="/alerts" element={loggedIn ? <Alerts role={role} /> : <Navigate to="/login" />} />
+        <Route path="/profile" element={loggedIn ? <Profile role={role} /> : <Navigate to="/login" />} />
       </Routes>
     </Router>
   );
