@@ -14,7 +14,7 @@ import RiskBreakdown from "./components/RiskBreakdown";
 import NewsFeed from "./components/NewsFeed";
 import RiskQuiz from "./components/RiskQuiz";
 import FaqPage from "./components/FaqPage";
-import CsvUploader from "./components/CsvUploader"; // <--- Add this
+import CsvUpload from "./components/CsvUploader"; // <--- Add this
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
